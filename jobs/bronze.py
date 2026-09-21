@@ -4,7 +4,8 @@ import re
 import sys
 from datetime import datetime, timezone
 
-from pyspark.sql import DataFrame, SparkSession, functions as F
+from pyspark.sql import DataFrame, SparkSession
+from pyspark.sql import functions as F
 
 from jobs.common.audit import BatchResult, log_batch_result
 from jobs.common.manifest import InputBatch, resolve_input_batch
